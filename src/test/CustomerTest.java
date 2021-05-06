@@ -33,6 +33,11 @@ public class CustomerTest {
     @Test
     public void addRental(){
         testCustomer.addRental(testRental);
+        assertEquals(testCustomer.statement(), "Rental Record for Jon\n" +
+                "\tTitle\t\tDays\tAmount\n" +
+                "\tRegularMovieTitle\t\t5\t6.5\n" +
+                "Amount owed is 6.5\n" +
+                "You earned 1 frequent renter points");
     }
 
     @Test

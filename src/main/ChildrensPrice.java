@@ -3,7 +3,7 @@ package main;
 public class ChildrensPrice extends Price{
 
     @Override
-    int getPriceCode() {
+    public int getPriceCode() {
         return Movie.CHILDRENS;
     }
     public double getCharge(int daysRented){

@@ -2,10 +2,10 @@ package main;
 
 public abstract class Price {
 
-    abstract int getPriceCode();
-    abstract double getCharge(int daysRented);
+    public abstract int getPriceCode();
+    public abstract double getCharge(int daysRented);
 
-    int getFrequentRenterPoints(int daysRented){
+    public int getFrequentRenterPoints(int daysRented){
         return 1;
     }
 }

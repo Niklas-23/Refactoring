@@ -3,7 +3,7 @@ package main;
 public class RegularPrice extends Price {
 
     @Override
-    int getPriceCode() {
+    public int getPriceCode() {
         return Movie.REGULAR;
     }
     public double getCharge(int daysRented){
